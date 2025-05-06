@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- lien pour feuille de style fontawesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/profil.css">
+    <title>MEMORY GAME-Profil</title>
+</head>
+
+<body>
+    <header role="">
+        <h1 class="titre">MEMORY GAME - Profil</h1>
+        <!-- barre de menu -->
+        <nav class="liste-menu">
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="inscription.html">S'inscrire</a></li>
+                <li><a href="connexion.html">Se connecter</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="jouer.html">Jouer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="">
+        <section class="container4">
+            <div class="photoProfil">
+                <h2>Profil</h2>
+                <img src="medias/photoProfil.png" alt="photo">
+            </div>
+            <form class="formulconnexion">
+                <fieldset class="formulaire">
+                    <label class="label" for="nom">Nom d'utilisateur</label>
+                    <input type="text" name="nom" id="nom" placeholder="3 caractères minimum" required>
+                    <label class="label" for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="votre email : exemple@gmail.com" required>
+                </fieldset>
+                <fieldset class="choixJeu">
+                    <label for="choixJeu">Choix du Memory</label>
+                    <select name="choixJeu" id="choixJeu">
+                        <!-- <option value="">--choisir une option--</option> -->
+                        <option value="dinoWithName">Dinosaures avec noms</option>
+                        <option value="animals">Animaux</option>
+                        <option value="animmateAnimals">Hamster</option>
+                    </select>
+                </fieldset>
+                <fieldset class="tailleJeu">
+                    <label for="tailleJeu">Taille du Memory</label>
+                    <select name="tailleJeu" id="tailleJeu">
+                        <!-- <option value="">--choisir une option--</option> -->
+                        <option value="douze">4*3</option>
+                        <option value="seize">4*4</option>
+                        <option value="vingt">4*5</option>
+                    </select>
+                </fieldset>
+                <img src="medias/memory_details_dinosaures_avec_nom.png" alt="exemple memory">
+                <fieldset class="bouton">
+                    <button class="validation4" type="submit">Enregistrez Option</Option></button>
+                </fieldset>
+            </form>
+            <table>
+                <caption class="titreTableau">Derniers Scores</caption>
+                <thead>
+                    <tr>
+                        <th>Pseudo</th>
+                        <th>Scores</th>
+                        <th>Taille</th>
+                        <th>Choix jeu</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td>you85</td>
+                    <td>10</td>
+                    <td>4*4</td>
+                    <td>Dinosaures avec noms</td>
+                    <td>05/05/2025</td>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>

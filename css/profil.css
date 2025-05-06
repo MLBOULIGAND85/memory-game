@@ -1,0 +1,280 @@
+
+/* chargement d'une police externe */
+@font-face {
+    font-family: 'Blinker-Regular';
+    src: url('Blinker-Regular.ttf');
+}
+
+* {
+    font-family:'Blinker-Regular', sans-serif;
+    color : white;
+}
+
+/* suppression des marges du body */
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(180deg, teal, goldenrod) no-repeat center;
+    background-size: cover;
+    
+}
+
+nav{
+    width:60%;
+    margin : 20px;
+    margin-bottom: 30px;
+    background-color: black;
+
+}
+
+nav a {
+    color : white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    color : grey;
+}
+
+.menu {
+    margin: 0;
+    padding: 1em;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 1em;
+    justify-items:center;
+
+}
+
+h1 {
+    /* position: absolute; */
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align : center;
+    text-shadow : 3px 3px 6px black;
+   
+}
+
+.container4 img {
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    /* margin: auto; */
+    border:none;
+    margin-bottom: 15px;
+    padding: 0;
+    /* width: 100%;
+    justify-content: space-evenly;*/
+}
+
+
+.formulaire input {
+    margin: 10px;
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 20px;
+    background-color: black;
+    border:none;
+    border-bottom:1px solid white;
+}
+
+.label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.titreH2 h2 {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.comment {
+    font-weight: lighter;
+    font-size: 1em;
+}
+
+.bouton {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.validation4 {
+    width: 40%;
+    padding: 8px 15px;
+    color:black;
+    border: none;
+    border-radius: 4px;
+}
+
+.container4 {
+    margin: auto;
+    padding: 25px;
+    display: flex;
+    height: auto;
+    width: 500px;
+    background-color: black;
+    /* background-position: center; */
+    border: 5px grey;
+    border-radius: 10px;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    /* align-items: flex-start; */
+}
+
+.photoProfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    /* margin:auto; */
+    /* text-align: center; */
+}
+
+.photoProfil img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    /* margin-top: 10px; */
+}
+
+.validation4 {
+    margin: auto;
+    text-align: center;
+    /* margin-right: 10px; */
+    /* width: 60px; */
+    padding: 5px;
+    color: black;
+}
+
+.choixJeu,.tailleJeu{
+    border:none;
+    margin-bottom: 20px;
+    padding: 0;
+
+}
+
+select, option {
+    color: teal;
+}
+
+.formulconnexion {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+table {
+margin: auto;
+padding: 5px;
+}
+
+td, th {
+    border : 2px solid goldenrod;
+    padding: 10px;
+}
+
+/* .container a:hover {
+    /* background-color: goldenrod; 
+    opacity: 0.3;
+} */
+
+/* .container a img {
+    transition:all 2s ease;
+}
+
+.container a:hover img {
+    scale: 150%; 
+} */
+
+
+
+/* article {
+    animation: mvtbashaut 3s forwards;
+} */
+
+/* animations */
+@keyframes mvtbahaut {
+    from {
+        bottom: 5em;
+    }
+
+    to {
+        bottom: 1em;
+    }
+}
+
+
+aside a:hover {
+    background-color:white;
+} 
+footer {
+    margin-top: 5em;
+    margin-bottom: 1em;
+    padding-top:1em;
+    padding-bottom:1em;
+    color: white;
+    font-size: 1.5em;
+    background-color: rgb(219, 161, 219);
+    border-bottom: 0.1px solid grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+/* footer img:hover {
+    animation: myrotation 3s forwards;
+} */
+
+
+/* animations */
+@keyframes myrotation {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(180deg);
+    }
+}
+
+/* exemple pseudo selecteur avec :: */
+/* p::first-letter {
+    font-size: 5em;
+    color:red;
+}
+
+p::before {
+    font-size: 3em;
+    color:red;
+    content:"Salut!";
+} */
+
+
+
+/* animation: mymove 5s forwards; */
+/* animations */
+@keyframes mymove {
+    from {
+        right: 5em;
+    }
+
+    to {
+        right: 1em;
+    }
+}
+

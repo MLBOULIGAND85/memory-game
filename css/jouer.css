@@ -1,0 +1,228 @@
+
+/* chargement d'une police externe */
+@font-face {
+    font-family: 'Blinker-Regular';
+    src: url('Blinker-Regular.ttf');
+}
+
+* {
+    font-family:'Blinker-Regular', sans-serif;
+    color : white;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* suppression des marges du body */
+body {
+    background: linear-gradient(180deg, teal, goldenrod) no-repeat center;
+    /* background-size: cover;  */
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+nav{
+    width:60%;
+    margin : 20px;
+    margin-bottom: 30px;
+    background-color: black;
+
+}
+
+nav a {
+    color : white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    color : grey;
+}
+
+.menu {
+    margin: 0;
+    padding: 1em;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 1em;
+    justify-items:center;
+
+}
+
+h1 {
+    /* position: absolute; */
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align : center;
+    text-shadow : 3px 3px 6px black;
+   
+}
+
+.container4 {
+    margin: auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 50%;
+    background-color: black;
+    border: 5px grey;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.container4 img {
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+
+
+.comment {
+    font-weight: lighter;
+    font-size: 1em;
+}
+
+.bouton {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin-top: 15px;
+}
+
+table {
+    margin: auto;
+    padding: 5px;
+}
+
+td, th {
+    border : 2px solid goldenrod;
+    padding: 10px;
+}
+
+.textJeu {
+    margin: auto;
+    text-align: center;
+}
+
+.score {
+    font-size: 0.8em;
+}
+
+/* Style pour la grille de cartes */
+.jeuCartes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.container4 article {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 1em;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px grey;
+    text-decoration: none;
+    /* cacher tout ce qui dépasse arrondi bordure image */
+    overflow: hidden;
+    /* transition: all 2s ease; */
+}
+
+.container4 button {
+    height: 105px;
+    width: 105px;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 1em;
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+    box-shadow: 3px 3px 20px grey;
+    text-decoration: none;
+    /* cacher tout ce qui dépasse arrondi bordure image */
+    overflow: hidden;
+    /* transition: all 2s ease; */
+}
+
+.jeuCartes img {
+    width: 100%;
+    padding-top: 0;
+}
+
+.jeuCartes img:hover {
+    border:2px double white;
+    cursor:pointer;
+}
+
+.cadre {
+    background-color: grey;
+    border: 1px solid white;
+    padding:2px
+}
+
+/* animations */
+@keyframes mvtbahaut {
+    from {
+        bottom: 5em;
+    }
+
+    to {
+        bottom: 1em;
+    }
+}
+
+
+/* footer img:hover {
+    animation: myrotation 3s forwards;
+} */
+
+
+/* animations */
+@keyframes myrotation {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(180deg);
+    }
+}
+
+/* exemple pseudo selecteur avec :: */
+/* p::first-letter {
+    font-size: 5em;
+    color:red;
+}
+
+p::before {
+    font-size: 3em;
+    color:red;
+    content:"Salut!";
+} */
+
+
+
+/* animation: mymove 5s forwards; */
+/* animations */
+@keyframes mymove {
+    from {
+        right: 5em;
+    }
+
+    to {
+        right: 1em;
+    }
+}
+
