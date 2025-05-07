@@ -38,14 +38,17 @@ console.log(jeu);
 console.log(tirageJeu);
 
 // création tableau de cartes 2D  avec le tirage
-const cartesJeu = [
-	[tirageJeu[0],tirageJeu[1],tirageJeu[2]],
-	[tirageJeu[3],tirageJeu[4],tirageJeu[5]],
-	[tirageJeu[6],tirageJeu[7],tirageJeu[8]],
-	[tirageJeu[9],tirageJeu[10],tirageJeu[11]]
-];
+// const cartesJeu = [
+// 	[tirageJeu[0],tirageJeu[1],tirageJeu[2]],
+// 	[tirageJeu[3],tirageJeu[4],tirageJeu[5]],
+// 	[tirageJeu[6],tirageJeu[7],tirageJeu[8]],
+// 	[tirageJeu[9],tirageJeu[10],tirageJeu[11]]
+// ];
 
 console.log(cartesJeu);
+// console.log(cartesJeu[0][1]);
+console.log(tirageJeu[1]);
+
 
 // affichage des tableaux dans la console
 console.log(jeuInit);
@@ -60,7 +63,7 @@ window.addEventListener("load", (event) => {
 		for (let j = 0; j < jeuInit[i].length; j++) {
 			divCartes.insertAdjacentHTML("beforeend",
 				`<button type="submit" class="carte-btn" id="bouton-${buttonId}" data-row="${i}" data-col="${j}">
-					<img id="img-${buttonId}" src="medias/0.jpg" alt="carte retournée">
+					<img id="${buttonId}" src="medias/0.jpg" alt="carte retournée">
 				</button>`
 			);
 			buttonId++;		
@@ -71,8 +74,9 @@ window.addEventListener("load", (event) => {
 //ecouter le click sur chaque bouton
 const boutons = document.querySelectorAll(".carte-btn");
 boutons.forEach(bouton => {
-	bouton.addEventListener("click", (event) => {
-		retournerCarte(event);
+	bouton.addEventListener("click", () => {
+		img.getElementById("")
+		retournerCarte();
 	});
 });
 

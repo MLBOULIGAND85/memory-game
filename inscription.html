@@ -27,24 +27,29 @@
     <main role="">
         <section class="container2">
             <h2 class="titreH2">Inscrivez-vous</h2>
-            <form class="formulInscription">
+            <form class="formulInscription" id="formulInscription">
                 <fieldset class="formulaire">
                     <label class="label" for="nom">Nom d'utilisateur</label>
-                    <input type="text" name="nom" id="nom" placeholder="3 caractères minimum" required>
+                    <input type="text" name="nom" id="nom" placeholder="3 caractères minimum" value="" required>
                     <label class="label" for="email">Entrez votre email</label>
-                    <input type="email" name="email" id="email" placeholder="votre email" required>
+                    <input type="email" name="email" id="email" placeholder="votre email" value="" required>
                     <label class="label" for="password">Mot de passe</label>
-                    <input type="password" name="password" id="password" placeholder="Votre mot de passe" required>
+                    <input type="password" name="password" id="password" placeholder="Votre mot de passe" value="" required>
                     <p><em class="comment">Au moins un symbole, un chiffre ainsi que 6 caractères minimum.</em></p>
                     <label class="label" for="confirmPassword">Confirmer le mot de passe</label>
-                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirmez le mot de passe" required>
+                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirmez le mot de passe" value="" required>
                 </fieldset>
                 <fieldset class="bouton">
-                    <button class="validation" type="submit">Création de compte</button>
-                    <button class="validation" type="submit">Annuler</button>
+                    <button class="validation" id="creation" type="submit">Création de compte</button>
+                    <button class="validation" id="annulation" type="button">Annuler</button>
                 </fieldset>
             </form>
         </section>
-    </main>    
+    </main>
+    <script src="js/inscription.js"></script> 
+    <script src="js/NameValidator.js"></script>
+    <script src="js/EmailValidator.js"></script> 
+    <script src="js/PasswordValidator.js"></script> 
+    <script src="js/ConfirmMdpValidator.js"></script>
 </body>
 </html>

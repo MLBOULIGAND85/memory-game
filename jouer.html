@@ -1,111 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- lien pour feuille de style fontawesome-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="css/jouer.css">
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/jouer.css" />
     <title>MEMORY GAME-Jouer</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header role="">
-        <h1 class="titre">MEMORY GAME - Jouer</h1>
-        <!-- barre de menu -->
-        <nav class="liste-menu">
-            <ul class="menu">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="inscription.html">S'inscrire</a></li>
-                <li><a href="connexion.html">Se connecter</a></li>
-                <li><a href="profil.html">Profil</a></li>
-                <li><a href="jouer.html">Jouer</a></li>
-            </ul>
-        </nav>
+      <h1 class="titre">MEMORY GAME - Jouer</h1>
+      <!-- barre de menu -->
+      <nav class="liste-menu">
+        <ul class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="inscription.html">S'inscrire</a></li>
+          <li><a href="connexion.html">Se connecter</a></li>
+          <li><a href="profil.html">Profil</a></li>
+          <li><a href="jouer.html">Jouer</a></li>
+        </ul>
+      </nav>
     </header>
     <main role="">
-        <section class="container4">
-            <!-- tableau des meilleurs scores -->
-			<table>
-				<caption class="titreTableau">Derniers Scores</caption>
-				<thead>
-					<tr>
-						<th>Pseudo</th>
-						<th>Score</th>
-						<th>Taille</th>
-						<th>Choix jeu</th>
-						<th>Date</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>me85</td>
-						<td>10</td>
-						<td>4*4</td>
-						<td>Dinosaures avec noms</td>
-						<td>05/05/2025</td>
-					</tr>
-					<tr>
-						<td>me85</td>
-						<td>50</td>
-						<td>4*5</td>
-						<td>Dinosaures avec noms</td>
-						<td>06/05/2025</td>
-					</tr>
-				</tbody>
-			</table>
-            <!-- texte -->
-            <div class="textJeu">
-                <p>Tentez de gagner avec le moins d'essais possible</p>
-                <p class="cadre">Appuyez sur la <strong>barre d'espace</strong> pour relancer le jeu</p>
-                <p class="score">Nombre de coups : 
-                </p>
-            </div>
-            <div class="jeuCartes" id="game">
-                <!-- insertion des bourtons images état initial avec JS -->
-                    <!-- <button type="submit" id="0">
-                        <img src="medias/0.jpg">
-                    </button> -->
-                    <!-- <article id="2">
-                        <img src="medias/2.jpg" alt="ceratosaure">
-                    </article>
-                    <article id="3">
-                        <img src="medias/3.jpg" alt="ceratosaure">
-                    </article>
-                    <article id="4">
-                        <img src="medias/4.jpg" alt="ceratosaure">
-                    </article>
-                    <article id="1">
-                        <img src="medias/1.jpg" alt="ceratosaure">
-                    </article>
-                    <article id="2">
-                        <img src="medias/2.jpg" alt="ceratosaure">
-                    </article>
-                    <article id="3">
-                        <img src="medias/3.jpg" alt="ceratosaure">
-                    </article>
-                    <article id="4">
-                        <img src="medias/4.jpg" alt="ceratosaure">
-                    </article>
-                    <article id="5">
-                        <img src="medias/5.jpg" alt="ceratosaure">
-                    </article>
-                    <article id="5">
-                        <img src="medias/5.jpg" alt="ceratosaure">
-                    </article>
-                    <article id="6">
-                        <img src="medias/6.jpg" alt="ceratosaure">
-                    </article>
-                    <article id="6">
-                        <img src="medias/6.jpg" alt="ceratosaure">
-                    </article> -->
-            </div>
-        </section>
+      <section class="container4">
+        <!-- tableau des meilleurs scores -->
+        <table>
+          <caption class="titreTableau">
+            Derniers Scores
+          </caption>
+          <thead>
+            <tr>
+              <th>Pseudo</th>
+              <th>Score</th>
+              <th>Taille</th>
+              <th>Choix jeu</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>me85</td>
+              <td>10</td>
+              <td>4*4</td>
+              <td>Dinosaures avec noms</td>
+              <td>05/05/2025</td>
+            </tr>
+            <tr>
+              <td>me85</td>
+              <td>50</td>
+              <td>4*5</td>
+              <td>Dinosaures avec noms</td>
+              <td>06/05/2025</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- texte -->
+        <div class="textJeu">
+          <p>Tentez de gagner avec le moins d'essais possible</p>
+          <p id="relancer" class="barre">
+            Appuyez sur la <strong>barre d'espace</strong> pour relancer le jeu
+          </p>
+          <!-- <p class="cadre" id="barre">
+            Appuyez sur la <strong>barre d'espace</strong> pour relancer le jeu
+          </p> -->
+          <h2>Nombre de coups: <span id="score">0/0</span></h2>
+        </div>
+        <div class="jeuCartes" id="game">
+          <div id="grid">
+            <!-- creation et affichage des cartes avec JS -->
+          </div>
+        </div>
+      </section>
     </main>
-    <script src="js/main.js"></script>
-</body>
-
+    <script src="js/script.js"></script>
+  </body>
 </html>
