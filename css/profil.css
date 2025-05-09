@@ -13,14 +13,14 @@
 /* suppression des marges du body */
 body {
     margin: 0;
-    height: 100vh;
+    padding-bottom: 20px;
     background: linear-gradient(180deg, teal, goldenrod) no-repeat center;
-    background-size: cover;
-    
+    background-size: 100% auto;
+    min-height:100vh;
 }
 
 nav{
-    width:60%;
+    width:50%;
     margin : 20px;
     margin-bottom: 30px;
     background-color: black;
@@ -42,14 +42,13 @@ nav a:hover {
     padding: 1em;
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
     gap: 1em;
     justify-items:center;
 
 }
 
 h1 {
-    /* position: absolute; */
     color: white;
     font-size: 2.5em;
     font-weight: bold;
@@ -68,12 +67,9 @@ h1 {
 .formulaire {
     display: flex;
     flex-direction: column;
-    /* margin: auto; */
     border:none;
     margin-bottom: 15px;
     padding: 0;
-    /* width: 100%;
-    justify-content: space-evenly;*/
 }
 
 
@@ -186,24 +182,6 @@ td, th {
     padding: 10px;
 }
 
-/* .container a:hover {
-    /* background-color: goldenrod; 
-    opacity: 0.3;
-} */
-
-/* .container a img {
-    transition:all 2s ease;
-}
-
-.container a:hover img {
-    scale: 150%; 
-} */
-
-
-
-/* article {
-    animation: mvtbashaut 3s forwards;
-} */
 
 /* animations */
 @keyframes mvtbahaut {
@@ -214,26 +192,6 @@ td, th {
     to {
         bottom: 1em;
     }
-}
-
-
-aside a:hover {
-    background-color:white;
-} 
-footer {
-    margin-top: 5em;
-    margin-bottom: 1em;
-    padding-top:1em;
-    padding-bottom:1em;
-    color: white;
-    font-size: 1.5em;
-    background-color: rgb(219, 161, 219);
-    border-bottom: 0.1px solid grey;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    
 }
 
 /* footer img:hover {

@@ -12,7 +12,7 @@ if(champEmail.value.trim() === "") {
 	champEmail.classList.add("error");
 	return false;
 } else {
-	alert("email ok");
+	// alert("email ok");
 	champEmail.classList.remove("error")
 	return true;
 }

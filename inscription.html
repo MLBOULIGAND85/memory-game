@@ -11,10 +11,10 @@
     <title>MEMORY GAME - S'inscrire</title>
 </head>
 <body>
-    <header role="">
+    <header role="banner">
         <h1 class="titre">MEMORY GAME - S'inscrire</h1>
         <!-- barre de menu -->
-        <nav class="liste-menu">
+        <nav role="navigation" class="liste-menu">
             <ul class="menu">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="inscription.html">S'inscrire</a></li>
@@ -24,7 +24,7 @@
             </ul>
         </nav>
     </header>
-    <main role="">
+    <main role="main" tabindex="-1">
         <section class="container2">
             <h2 class="titreH2">Inscrivez-vous</h2>
             <form class="formulInscription" id="formulInscription">
@@ -35,7 +35,7 @@
                     <input type="email" name="email" id="email" placeholder="votre email" value="" required>
                     <label class="label" for="password">Mot de passe</label>
                     <input type="password" name="password" id="password" placeholder="Votre mot de passe" value="" required>
-                    <p><em class="comment">Au moins un symbole, un chiffre ainsi que 6 caractères minimum.</em></p>
+                    <p><em class="comment">6 caractères minimun avec au moins une minuscule, une majuscule, un chiffre, un caractère spécial.</em></p>
                     <label class="label" for="confirmPassword">Confirmer le mot de passe</label>
                     <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirmez le mot de passe" value="" required>
                 </fieldset>

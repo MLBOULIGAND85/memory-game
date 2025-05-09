@@ -13,9 +13,9 @@ if(champName.value.trim() === "") {
 	champName.classList.add("error");
 	return false;
 } else {
-	alert("Nom ok");
+	// alert("Nom ok");
 	champName.classList.remove("error")
 	return true;
+	
 }
-
 };

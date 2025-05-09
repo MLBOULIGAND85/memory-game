@@ -6,7 +6,7 @@ function ConfirmMdpValidator(champConfirmPassword,champPassword) {
 		champConfirmPassword.classList.add("error");
 		return false;
 	} else if(champConfirmPassword.value.trim() === champPassword.value.trim()) {
-		alert("mot de passe ok");
+		// alert("vérification mot de passe ok");
 		champPassword.classList.remove("error")
 		return true;
 	} else {

@@ -12,7 +12,7 @@ if(champPassword.value.trim() === "") {
 	champPassword.classList.add("error");
 	return false;
 } else {
-	alert("mot de passe ok");
+	// alert("mot de passe ok");
 	champPassword.classList.remove("error")
 	return true;
 }
