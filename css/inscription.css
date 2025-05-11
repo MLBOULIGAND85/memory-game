@@ -24,8 +24,6 @@ nav{
     margin : 20px;
     margin-bottom: 30px;
     background-color: black;
-    /* padding-top: 0.5em; 
-    padding-bottom: 0.5em; */
 }
 
 nav a {
@@ -36,6 +34,7 @@ nav a {
 
 nav a:hover {
     color : grey;
+    border: 1px solid white;
 }
 
 .menu {
@@ -75,20 +74,26 @@ h1 {
 
 .formulaire {
     margin: auto;
-    border:none;
+    border: none;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-}
-
+    }
+    
 .formulaire input {
     margin: 10px;
+    margin-top: 0px;
     margin-left: 0px;
-    height: 40px;
+    height: 30px;
     background-color: black;
     border:none;
     border-bottom:1px solid white;
+}
+
+.label {
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 .titreH2 {
@@ -97,9 +102,12 @@ h1 {
 }
 
 .comment {
-    font-weight: lighter;
-    font-size: 0.7em;
+    padding-top: 20px;
+    font-weight: light;
+    font-style: italic;
+    font-size: 0.6em;
     color:rgb(193, 193, 193);
+    text-align: left;
 }
 
 .bouton {
@@ -115,24 +123,32 @@ h1 {
     color:black
 }
 
-
-/* exemple */
-footer img:hover {
-    animation: myrotation 3s forwards;
-} 
-
-
-/* animations */
-@keyframes myrotation {
-    from {
-        transform: rotateY(0deg);
-    }
-
-    to {
-        transform: rotateY(180deg);
-    }
+.password-container {
+    padding: 10px;
+    padding-bottom: 0px;
 }
 
+.strength-meter {
+    margin-bottom: 5px;
+    width: 95%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    /* overflow: hidden; */
+}
+
+.strength-bar {
+    height: 100%;
+    transition: width 0.3s;
+}
+
+.strength-text, #strength-text {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 0.8em;
+    /* color:goldenrod; */
+    text-align: center;
+}
 /* exemple pseudo selecteur avec :: */
 /* p::first-letter {
     font-size: 5em;

@@ -33,9 +33,19 @@
                     <input type="text" name="nom" id="nom" placeholder="3 caractères minimum" value="" required>
                     <label class="label" for="email">Entrez votre email</label>
                     <input type="email" name="email" id="email" placeholder="votre email" value="" required>
+                
                     <label class="label" for="password">Mot de passe</label>
-                    <input type="password" name="password" id="password" placeholder="Votre mot de passe" value="" required>
-                    <p><em class="comment">6 caractères minimun avec au moins une minuscule, une majuscule, un chiffre, un caractère spécial.</em></p>
+                    <!-- insertion indicateur de niveau avec JS -->
+                    <input type="password" name="password" id="password" placeholder="Votre mot de passe" value="" required oninput="checkStrength()">
+
+                    <div class="password-container" >
+                        <div class="strength-meter">
+                            <div class="strength-bar" id="strength-bar"></div>
+                            <p class="strength-text" id="strength-text"></p>
+                        </div>
+                        <p class="comment">6 caractères minimun avec au moins une minuscule, une majuscule, un chiffre, un caractère spécial.</p>
+                    </div>
+
                     <label class="label" for="confirmPassword">Confirmer le mot de passe</label>
                     <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirmez le mot de passe" value="" required>
                 </fieldset>
@@ -50,6 +60,7 @@
     <script src="js/NameValidator.js"></script>
     <script src="js/EmailValidator.js"></script> 
     <script src="js/PasswordValidator.js"></script> 
+    <script src="js/PasswordIndicator.js"></script>
     <script src="js/ConfirmMdpValidator.js"></script>
 </body>
 </html>
